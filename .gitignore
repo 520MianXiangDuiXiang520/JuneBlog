@@ -1,0 +1,4 @@
+Blog/admin/migrations/*
+Blog/article/migrations/*
+.idea/*
+*.pyc
