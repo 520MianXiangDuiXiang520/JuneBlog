@@ -84,8 +84,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'juneblog',
         'USER': 'juneblog',
-        'PASSWORD': '1234567',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'zjb19990805',
+        'HOST': 'cdb-j67xthnk.cd.tencentcdb.com',
         'PORT': '10067',
         'OPTIONS': {
             "init_command": "SET foreign_key_checks = 0;",

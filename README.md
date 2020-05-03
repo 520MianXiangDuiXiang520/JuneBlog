@@ -4,7 +4,13 @@
 
 这新型肺炎搞得，又出不去，又不想学习，就随便写个博客玩玩，还有好多 BUG 先上线了再说。 
 
-[演示地址](http://139.9.117.134/Blog/index.html)
+[演示地址](https://junebao.top)
+
+## 2. 功能
+
+1. 在线文章增删查改
+2. 评论
+3. 每天通过邮件发送访客信息
 
 
 ## 2.感谢
@@ -17,5 +23,6 @@
 * 后端主要使用 [Django](https://www.djangoproject.com/)
 * 前后端分离依赖 [Django-REST-framework](https://www.django-rest-framework.org/tutorial/1-serialization/)
 * Ajax 请求使用 [reqwest](https://www.npmjs.com/package/reqwest)
+* 脚本以守护进程方式运行[关于python脚本以linux守护进程（daemon）运行](https://blog.csdn.net/chenbogger/article/details/99312582)
 
 

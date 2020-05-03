@@ -1,4 +1,4 @@
-from rest_framework.views import APIView
+from .monitor import MonitorView
 from django.http.response import JsonResponse
 from Blog.utils.Throttles import Throttles
 from Blog.utils.MyPagination import MyPageNumberPagination, MyPageNumberPagination2
@@ -9,7 +9,7 @@ from Blog.utils.Tools import response_detail
 # Create your views here.
 
 
-class TagsView(APIView):
+class TagsView(MonitorView):
     throttle_classes = [Throttles]
 
     def get(self, request, *args, **kwargs):
@@ -18,7 +18,7 @@ class TagsView(APIView):
         return JsonResponse(response_detail(200, 'ok', tags_serializer.data))
 
 
-class ArticlesListView(APIView):
+class ArticlesListView(MonitorView):
     throttle_classes = [Throttles]
 
     def get(self, request, *args, **kwargs):
@@ -41,7 +41,7 @@ class ArticlesListView(APIView):
         return pagination.get_paginated_response(articles_list_ser.data)
 
 
-class DetailView(APIView):
+class DetailView(MonitorView):
     throttle_classes = [Throttles]
 
     @staticmethod

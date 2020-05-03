@@ -140,9 +140,10 @@ class ArticleManage(APIView):
             title = self._check_title(title)
             tags = self._check_tags(tags)
             article = self._check_article(article)
+            abstract = self._check_abstract(article)
         except AssertionError as e:
             return JsonResponse(response_detail(400, e.args[0]))
-        new_article = Article(title=title, article=article)
+        new_article = Article(title=title, article=article, abstract=abstract)
         new_article.save()
         for tag in tags:
             new_article.tags.add(tag)

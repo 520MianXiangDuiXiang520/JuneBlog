@@ -1,0 +1,5 @@
+redis==3.4.1
+requests==2.20.0
+ua-parser==0.10.0
+user-agent==0.1.9
+user-agents==2.1
