@@ -16,7 +16,9 @@ class SendRegularly(Daemon):
                     data = Arrange().arrange()
                     if len(data) > 0:
                         report = GetReport.get_report(data)
-                        EmailUtil.send(report)
+                        subject = f'{(datetime.datetime.now() + datetime.timedelta(days=-1)).strftime("%Y-%m-%d")}' \
+                                  f'站点访问情况汇总'
+                        EmailUtil.send(report, subject)
                 except Exception as e:
                     print(e)
                     print("="*20)
