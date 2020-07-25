@@ -35,3 +35,12 @@ github.com/ugorji/go/codec
 golang.org/x/sys/unix
 # gopkg.in/yaml.v2 v2.2.8
 gopkg.in/yaml.v2
+# junebao.top/aboutfile v0.0.0 => ../junebao.top/aboutfile
+## explicit
+junebao.top/aboutfile
+# junebao.top/aboutweb v0.0.0 => ../junebao.top/aboutweb
+## explicit
+junebao.top/aboutweb
+# junebao.top/base v0.0.0 => ../junebao.top/base
+## explicit
+junebao.top/base
