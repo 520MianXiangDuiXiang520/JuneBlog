@@ -3,3 +3,4 @@ Blog/article/migrations/*
 .idea/*
 *.pyc
 *.log
+*.ini
