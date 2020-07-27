@@ -4,3 +4,4 @@ Blog/article/migrations/*
 *.pyc
 *.log
 *.ini
+*.exe
