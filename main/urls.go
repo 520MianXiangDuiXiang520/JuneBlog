@@ -4,9 +4,9 @@ import "github.com/gin-gonic/gin"
 
 func Routes(engine *gin.Engine) {
 	// 文章标签路由组
-	tagsGroup := engine.Group("api/juneBlog/tags")
+	tagsGroup := engine.Group("api/go/juneBlog/tags")
 	// 文章详情路由组
-	articleGroup := engine.Group("api/juneBlog/article")
+	articleGroup := engine.Group("api/go/juneBlog/article")
 
 	// 获取所有标签
 	tagsGroup.GET("/list", getAllTags)
